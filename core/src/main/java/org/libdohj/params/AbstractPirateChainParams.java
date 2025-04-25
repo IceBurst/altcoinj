@@ -21,6 +21,7 @@
 package org.libdohj.params;
 
 import org.bitcoinj.core.*;
+import org.bitcoinj.params.AbstractBitcoinNetParams;
 import org.bitcoinj.store.BlockStore;
 import org.bitcoinj.store.BlockStoreException;
 import org.bitcoinj.utils.MonetaryFormat;
@@ -36,7 +37,7 @@ import static org.bitcoinj.core.Coin.COIN;
 /**
  * Common parameters for Litecoin networks.
  */
-public abstract class AbstractPirateChainParams extends NetworkParameters implements AltcoinNetworkParameters {
+public abstract class AbstractPirateChainParams extends AbstractBitcoinNetParams implements AltcoinNetworkParameters {
     /** Standard format for the PIRATE denomination. */
     public static final MonetaryFormat PIRATE;
     /** Standard format for the mPIRATE denomination. */

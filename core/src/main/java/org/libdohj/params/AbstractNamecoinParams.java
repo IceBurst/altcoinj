@@ -28,6 +28,7 @@ import org.bitcoinj.core.Coin;
 import static org.bitcoinj.core.Coin.COIN;
 import org.bitcoinj.core.NetworkParameters;
 import org.bitcoinj.core.VerificationException;
+import org.bitcoinj.params.AbstractBitcoinNetParams;
 import org.bitcoinj.script.Script;
 import org.bitcoinj.script.ScriptOpCodes;
 import org.bitcoinj.store.BlockStore;
@@ -51,7 +52,7 @@ import org.libdohj.core.AuxPoWNetworkParameters;
 /**
  * Common parameters for Namecoin networks.
  */
-public abstract class AbstractNamecoinParams extends NetworkParameters implements AuxPoWNetworkParameters {
+public abstract class AbstractNamecoinParams extends AbstractBitcoinNetParams implements AuxPoWNetworkParameters {
     /** Standard format for the NMC denomination. */
     public static final MonetaryFormat NMC;
     /** Standard format for the mNMC denomination. */

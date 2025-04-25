@@ -17,6 +17,7 @@
 package org.libdohj.params;
 
 import org.bitcoinj.core.*;
+import org.bitcoinj.params.AbstractBitcoinNetParams;
 import org.bitcoinj.store.BlockStore;
 import org.bitcoinj.store.BlockStoreException;
 import org.bitcoinj.utils.MonetaryFormat;
@@ -30,7 +31,7 @@ import static org.bitcoinj.core.Coin.COIN;
 /**
  * Common parameters for Litecoin networks.
  */
-public abstract class AbstractLitecoinParams extends NetworkParameters implements AltcoinNetworkParameters {
+public abstract class AbstractLitecoinParams extends AbstractBitcoinNetParams implements AltcoinNetworkParameters {
     /** Standard format for the LITE denomination. */
     public static final MonetaryFormat LITE;
     /** Standard format for the mLITE denomination. */

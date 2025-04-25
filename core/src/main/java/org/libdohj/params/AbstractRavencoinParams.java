@@ -22,6 +22,7 @@
 package org.libdohj.params;
 
 import org.bitcoinj.core.*;
+import org.bitcoinj.params.AbstractBitcoinNetParams;
 import org.bitcoinj.store.BlockStore;
 import org.bitcoinj.store.BlockStoreException;
 import org.bitcoinj.utils.MonetaryFormat;
@@ -37,7 +38,7 @@ import static org.bitcoinj.core.Coin.COIN;
 /**
  * Common parameters for Ravencoin networks.
  */
-public abstract class AbstractRavencoinParams extends NetworkParameters implements AltcoinNetworkParameters {
+public abstract class AbstractRavencoinParams extends AbstractBitcoinNetParams implements AltcoinNetworkParameters {
     /** Standard format for the RVN denomination. */
     public static final MonetaryFormat RVN;
     /** Standard format for the mRVN denomination. */

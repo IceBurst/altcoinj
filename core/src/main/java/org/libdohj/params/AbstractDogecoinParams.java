@@ -25,6 +25,7 @@ import org.bitcoinj.core.Coin;
 import static org.bitcoinj.core.Coin.COIN;
 import org.bitcoinj.core.NetworkParameters;
 import org.bitcoinj.core.VerificationException;
+import org.bitcoinj.params.AbstractBitcoinNetParams;
 import org.bitcoinj.script.Script;
 import org.bitcoinj.script.ScriptOpCodes;
 import org.bitcoinj.store.BlockStore;
@@ -46,7 +47,7 @@ import org.libdohj.core.AuxPoWNetworkParameters;
 /**
  * Common parameters for Dogecoin networks.
  */
-public abstract class AbstractDogecoinParams extends NetworkParameters implements AuxPoWNetworkParameters {
+public abstract class AbstractDogecoinParams extends AbstractBitcoinNetParams implements AuxPoWNetworkParameters {
     /** Standard format for the DOGE denomination. */
     public static final MonetaryFormat DOGE;
     /** Standard format for the mDOGE denomination. */
